@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="log.jpg" alt="SACCO Logo" class="logo">
+  <h1>THE CONQUERORS SAVINGS SACCO</h1>
+  <p>Save Together, Grow Together.</p>
+</header>
+
+<main>
+  <h2>Login or Create Account</h2>
+  <div class="login-buttons">
+    <button onclick="showSection('userLogin')">User Login</button>
+    <button onclick="showSection('adminLogin')">Admin Login</button>
+    <button onclick="showSection('createAccount')">Create Account</button>
+  </div>
+
+  <div id="userLogin" class="login-section">
+    <h3>User Login</h3>
+    <input type="email" id="userEmail" placeholder="Email">
+    <input type="password" id="userPass" placeholder="Password">
+    <button onclick="loginUser()">Login as User</button>
+  </div>
+
+  <div id="adminLogin" class="login-section">
+    <h3>Admin Login</h3>
+    <input type="password" id="adminPass" placeholder="Admin Password">
+    <button onclick="loginAdmin()">Login as Admin</button>
+  </div>
+
+  <div id="createAccount" class="login-section">
+    <h3>Create Account</h3>
+    <input type="text" id="fname" placeholder="First Name">
+    <input type="text" id="lname" placeholder="Last Name">
+    <input type="phone" id="phone" placeholder="Phone number">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="createAccount()">Create Account</button>
+  </div>
+</main>
+
+<footer>
+  THE CONQUERORS SAVINGS SACCO TCSS<br>
+  Save Together, Grow Together.<br>
+  Copyright ©️ <span id="year"></span>. All rights reserved.
+</footer>
+<!-- Supabase JS library -->
+<!-- Load Supabase library locally -->
+<script src="supabase.min.js"></script>
+
+<!-- Your app code -->
+<script src="script.js"></script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>>
+</body>
+</html>

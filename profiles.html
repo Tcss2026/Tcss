@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="log.jpg" alt="SACCO Logo" class="logo">
+  <h1>THE CONQUERORS SAVINGS SACCO</h1>
+  <p>Save Together, Grow Together.</p>
+</header>
+
+<main>
+  <h2>Member Profile</h2>
+  <div id="profileInfo">
+    <!-- ID, name, profile pic -->
+  </div>
+
+  <div id="accountActions">
+    <button onclick="deposit()">Deposit (Admin)</button>
+    <button onclick="withdraw()">Withdraw (Admin)</button>
+    <button onclick="downloadHistory()">Download Transaction History</button>
+  </div>
+
+  <h3>Transaction History</h3>
+  <table id="txnHistory">
+    <thead>
+      <tr><th>Txn#</th><th>Date</th><th>Deposit</th><th>Withdraw</th><th>Amount</th><th>Actions</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <button onclick="location.href='members.html'">BACK</button>
+</main>
+
+<footer>
+  THE CONQUERORS SAVINGS SACCO TCSS<br>
+  Save Together, Grow Together.<br>
+  Copyright ©️ <span id="year"></span>. All rights reserved.
+</footer>
+<!-- Supabase JS library -->
+<!-- Load Supabase library locally -->
+<script src="supabase.min.js"></script>
+
+<!-- Your app code -->
+<script src="script.js"></script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>>
+</body>
+</html>

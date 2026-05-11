@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Conquerors SACCO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <img src="log.jpg" alt="SACCO Logo" class="logo">
+  <h1>THE CONQUERORS SAVINGS SACCO</h1>
+  <p>Save Together, Grow Together.</p>
+</header>
+
+<main>
+  <h2>Welcome to The Conquerors Savings SACCO</h2>
+  <p>Manage your savings easily and securely.</p>
+  <button onclick="location.href='reg.html'">Continue</button>
+</main>
+
+<footer>
+  THE CONQUERORS SAVINGS SACCO TCSS<br>
+  Save Together, Grow Together.<br>
+  Copyright ©️ <span id="year"></span>. All rights reserved.
+</footer>
+<<!-- Load Supabase library first -->
+<!-- Load Supabase library locally -->
+<script src="supabase.min.js"></script>
+
+<!-- Your app code -->
+<script src="script.js"></script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>>
+</body>
+</html>
